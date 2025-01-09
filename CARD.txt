@@ -1,0 +1,112 @@
+#JAVA
+
+package com.example.card;
+
+
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+
+#XML
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title: Company Name -->
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DSCE ISE"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/companyName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        />
+
+    <!-- Horizontal Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/companyLogo"
+        android:layout_marginTop="16dp"
+        android:background="#444444" />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Swanapa Deep"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Job Title -->
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personName"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Software Developer"
+        android:textSize="18sp" />
+
+    <!-- Company Phone Number -->
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jobTitle"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Phone: 9481822025"
+        android:textSize="18sp" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="PB No. 32, Kumar Hills, KumarSwamy-5660098"
+        android:textSize="16sp" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Email: Swanapa.Deep@infasol.com"
+        android:textSize="18sp" />
+</RelativeLayout>
